@@ -1,3 +1,4 @@
+
 # Copy Files
 aws s3 cp index.html s3://identify-immune-www/ --acl public-read
 aws s3 cp team.html s3://identify-immune-www/ --acl public-read
@@ -15,3 +16,4 @@ aws cloudfront create-invalidation --distribution-id E382EUS5SP9ZAI --paths "/su
 aws cloudfront create-invalidation --distribution-id E382EUS5SP9ZAI --paths "/error.html"
 aws cloudfront create-invalidation --distribution-id E382EUS5SP9ZAI --paths "/team.html"
 aws cloudfront create-invalidation --distribution-id E382EUS5SP9ZAI --paths "/identify-immune.js"
+aws cloudfront create-invalidation --distribution-id E382EUS5SP9ZAI --paths "/team.html"
