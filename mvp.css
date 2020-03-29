@@ -43,6 +43,7 @@ article aside {
     background: var(--color-secondary-accent);
     border-left: 4px solid var(--color-secondary);
     padding: 0.01rem 0.8rem;
+    justify-content: var(--justify-important);
 }
 
 body {
@@ -58,17 +59,26 @@ body {
 #splash {
     background: var(--color-secondary-accent);
     color: var(--color-text);
-    padding: 40px 40px 20px 20px;
-    justify-content: var(--justify-normal);
+    padding: 40px;
+    justify-content: center;
 }
 
-footer,
 header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
+    justify-content: center;
     clear: both;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 10px;
+    background: var(--color);
+    clear: both;
+    justify-content: center;
+    line-height: 0.8;
 }
 
 hr {
@@ -85,12 +95,13 @@ section {
 }
 
 section aside {
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid var(--color-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     margin: 1rem;
     padding: 1.25rem;
     width: var(--width-card);
+    text-align: var(--justify-important);
 }
 
 section aside:hover {
@@ -160,7 +171,7 @@ samp {
     display: inline-block;
     margin: 0 0.1rem;
     padding: 0rem 0.5rem;
-    text-align: var(--justify-normal);
+    text-align: var(--justify-important);
 }
 
 
@@ -247,7 +258,7 @@ button {
     display: inline-block;
     font-size: medium;
     font-weight: bold;
-    margin: 1.5rem 0 0.5rem 0;
+    margin: 1.5rem 0 1.5rem 0rem;
     padding: 1rem 2rem;
 }
 
@@ -262,6 +273,7 @@ button {
     background-color: var(--color);
     border: 2px solid var(--color);
     color: var(--color-bg);
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 a em,
@@ -352,7 +364,7 @@ table tr {
 }
 
 table thead {
-    background-color: var(--color-secondary-accent);
+    background-color: var(--color);
     border-collapse: collapse;
     border-radius: var(--border-radius);
     color: var(--color-text);
@@ -384,7 +396,7 @@ blockquote {
     text-align: var(--justify-important);
 }
 
-blockquote footer {
+blfooter {
     color: var(--color-text-secondary);
     display: block;
     font-size: small;
