@@ -55,12 +55,20 @@ body {
     padding: 1rem 0;
 }
 
+#splash {
+    background: var(--color-secondary-accent);
+    color: var(--color-text);
+    padding: 40px 40px 20px 20px;
+    justify-content: var(--justify-normal);
+}
+
 footer,
 header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
     padding: 2rem 1rem;
+    clear: both;
 }
 
 hr {
@@ -102,6 +110,7 @@ main header {
 
 header {
     text-align: var(--justify-important);
+    clear: both;
 }
 
 header a b,
@@ -121,13 +130,14 @@ section header {
     width: 100%;
 }
 
+
 /* Nav */
 nav {
     align-items: center;
     display: flex;
     font-weight: bold;
     justify-content: space-between;
-    margin-bottom: 7rem;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -137,6 +147,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    color: var(--color-text-secondary);
     margin: 0 0.5rem;
 }
 
@@ -151,6 +162,7 @@ samp {
     padding: 0rem 0.5rem;
     text-align: var(--justify-normal);
 }
+
 
 details {
     margin: 1.3rem 0;
@@ -217,8 +229,7 @@ sup {
 
 /* Links */
 a {
-    color: var(--color-secondary);
-    font-weight: bold;
+    color: var(--color-text);
     text-decoration: none;
 }
 
@@ -289,8 +300,8 @@ form {
 }
 
 form header {
-    margin: 1.5rem 0;
-    padding: 1.5rem 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 input,
@@ -337,14 +348,14 @@ table td,
 table th,
 table tr {
     padding: 0.4rem 0.8rem;
-    text-align: var(--justify-important);
+    text-align: var(--justify-normal);
 }
 
 table thead {
-    background-color: var(--color);
+    background-color: var(--color-secondary-accent);
     border-collapse: collapse;
     border-radius: var(--border-radius);
-    color: var(--color-bg);
+    color: var(--color-text);
     margin: 0;
     padding: 0;
 }
