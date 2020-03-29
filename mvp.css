@@ -77,7 +77,6 @@ footer {
     padding: 10px;
     background: var(--color);
     clear: both;
-    justify-content: center;
     line-height: 0.8;
 }
 
