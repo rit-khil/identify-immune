@@ -1,7 +1,6 @@
-Barcode,Collected to Patient Shipped,Patient Shipped to Lab Received,Lab Received to Lab Processed
-MEAN,2.644894895,2.06095679,2.016589506
-50th,2.416666667,1.6875,1.041666667
-5th,0.770833333,0.65625,0
-25th,1.5625,1.208333333,0.125
-75th,3.1875,2.4375,2.052083333
-95th,5.083333333,4.06875,5.1375
+Barcode,Asymptomatic,Sick at Home,In Hospital (no ICU),ICU
+Mar 15-21,7,9,4,1
+Mar 28+,0,2,0,0
+Mar 22-28,0,3,4,0
+Mar 8-14,3,7,3,1
+Mar 1-7,8,10,9,1

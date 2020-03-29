@@ -156,7 +156,7 @@ svg.selectAll("circle")
 // Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
 var legend = container.append("svg")
       		.attr("class", "legend")
-     			.attr("width", 180)
+     			.attr("width", 280)
     			.attr("height", 200)
    				.selectAll("g")
    				.data(color)
@@ -182,9 +182,13 @@ var legend = container.append("svg")
 }
 
 function initBarGraph() {
-    var container = d3.select("#map-placeholder");
-    var svg = container.append("svg2");
-    margin = {top: 20, right: 20, bottom: 60, left: 80},
+    var container = d3.select("#bar-graph");
+    var svg = container.append("svg");
+    var w = 960;
+    var h = 500;
+    svg.attr("width", w)
+			.attr("height", h);
+    margin = {top: 20, right: 20, bottom: 60, left: 100},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -277,4 +281,4 @@ d3.csv("data-infections.csv", function(d, i, columns) {
 }
 
 initMap();
-//initBarGraph();
+initBarGraph();
